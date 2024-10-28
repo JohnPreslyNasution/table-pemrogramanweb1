@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulir</title>
+    <link rel="shortcut icon" href="https://ssl.gstatic.com/docs/spreadsheets/forms/forms_icon_2023q4.ico">
+</head>
+<body>
+    <div class="form">
+        <form class="form-register" id="formRegister">
+            <fieldset>
+                <h1>Isi Data Anda</h1>
+                <p>Nama Depan:</p>
+                <input type="text" id="nama_depan">
+                <p>Nama Belakang:</p>
+                <input type="text" id="nama_belakang">
+                <p>NIM:</p>
+                <input type="text" id="nim">
+                <p>Kelas:</p>
+                <input type="text" id="kelas">
+                <p>Jenis Kelamin:</p>
+                <p><input type="radio" name="jenis-kelamin" value="Laki-laki">Laki-laki</p>
+                <p><input type="radio" name="jenis-kelamin" value="Perempuan">Perempuan</p>
+                <button type="button" class="btn-tambah" onclick="addData()">Tambah</button>
+                <button type="reset" class="btn-hapus">Hapus</button>
+            </fieldset>
+        </form>
+        <table id="data">
+            <thead>
+                <tr>
+                    <th>Nama Depan</th>
+                    <th>Nama Belakang</th>
+                    <th>NIM</th>
+                    <th>Kelas</th>
+                    <th>Jenis Kelamin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan ditambahkan di sini -->
+                <!-- Responsif tabel ketika ukurannya mobile, jadi bisa digeser ke kiri ke kanan -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

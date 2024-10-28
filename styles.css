@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    /* border: solid 1px; */
+    gap: 10px;
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+p, h1 {
+    margin-bottom: 2px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2px;
+}
+
+input {
+    margin-bottom: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+}
+
+.btn-tambah, .btn-hapus {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-tambah {
+    background-color: #007BFF;
+}
+
+.btn-hapus {
+    background-color: red;
+}
+
+button:hover {
+    background-color: #01ff41;
+}
+
+/* Styling table dengan ukuran tetap */
+table {
+    width: 100%; /* Lebar tabel tetap 100% dari container */
+    table-layout: fixed; /* Memastikan lebar kolom tetap */
+    border-collapse: collapse; /* Menghilangkan space antar border */
+    margin-top: 20px;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 10px;
+    word-wrap: break-word; /* Membungkus kata yang panjang */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 900px) {
+    .form-register {
+        width: 90%;
+    }
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
